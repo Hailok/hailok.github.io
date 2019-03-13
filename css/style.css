@@ -1,13 +1,179 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+}
+
+.shop-now {
+  padding: 10px 20px;
+  background: #3954d9;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "Font Awesome";
   src: url(../font/font-awesome-400.woff2) format("woff2"), url(../font/font-awesome-400.woff) format("woff"), url(../font/font-awesome-400.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-body {
-  background: rgba(0, 0, 0, 0.3);
+#header {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/header/bg.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+#header .menu {
+  height: 75px;
+  display: flex;
+  background-color: rgba(33, 33, 33, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header .menu .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header .menu .logo .logo-item {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+}
+#header .menu .menu-list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 500px;
+  padding: 0 30px 0 30px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header .menu .menu-list .menu-item {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+}
+#header .menu .set-of-social-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header .menu .set-of-social-buttons .social-button-item {
+  display: flex;
+  align-items: center;
+}
+#header .menu .shop-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header .menu .search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  box-sizing: border-box;
+}
+#header .actual-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  margin-left: 15%;
+}
+#header .actual-offer h1 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 10em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#header .actual-offer p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+#header .actual-offer .shop-now {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
