@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 body {
-  background-color: rgba(0, 0, 0, 0.05);
   font-size: 16px;
 }
 
@@ -174,6 +173,46 @@ table {
 }
 #header .actual-offer .shop-now {
   margin-top: 40px;
+}
+
+#main {
+  width: 1500px;
+  margin: auto;
+}
+#main .about-us {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+#main .about-us .about-us-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  padding: 75px 70px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 25px rgba(12, 12, 12, 0.13);
+}
+#main .about-us .about-us-item .about-us-item-title {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: #0d2e57;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#main .about-us .about-us-item .about-us-item-text {
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-size: 0.8em;
+  color: #8a8a8a;
+}
+#main .about-us .about-us-item:last-child {
+  border-right: none;
+}
+#main .offer-of-the-month {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
