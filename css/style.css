@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 body {
@@ -6,7 +6,7 @@ body {
 }
 
 .shop-now {
-  padding: 10px 20px;
+  padding: 12px 20px;
   background: #3954d9;
   border-radius: 15px;
   font-family: "Roboto", sans-serif;
@@ -204,8 +204,9 @@ table {
 }
 #main .about-us .about-us-item .about-us-item-text {
   margin-top: 25px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
+  line-height: 1.5;
   color: #8a8a8a;
 }
 #main .about-us .about-us-item:last-child {
@@ -213,6 +214,85 @@ table {
 }
 #main .offer-of-the-month {
   display: flex;
+}
+#main .offer-of-the-month .offer {
+  width: 50%;
+  padding: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f0f0;
+}
+#main .offer-of-the-month .offer .offer-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+#main .offer-of-the-month .offer .offer-title {
+  margin-top: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+#main .offer-of-the-month .offer .offer-text {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: #8a8a8a;
+  text-align: center;
+}
+#main .offer-of-the-month .offer .price {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+#main .offer-of-the-month .offer .price .new {
+  margin-right: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: #3954d9;
+}
+#main .offer-of-the-month .offer .price .old {
+  margin-left: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-decoration: line-through;
+}
+#main .offer-of-the-month .offer .time-left {
+  width: 420px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#main .offer-of-the-month .offer .time-left .time-left-item {
+  width: 90px;
+  height: 110px;
+  padding: 25px 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+#main .offer-of-the-month .offer .time-left .time-left-item .value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+#main .offer-of-the-month .offer .time-left .time-left-item .value-name {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+#main .offer-of-the-month .offer .shop-now {
+  margin-top: 50px;
+}
+#main .offer-of-the-month .image {
+  width: 50%;
+  background: url("../img/body/offer-of-the-month/image.jpg") center center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */

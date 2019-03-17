@@ -28,8 +28,9 @@
 
       .about-us-item-text {
         margin-top: 25px;
-        font-family: Montserrat;
+        font-family: "Montserrat", sans-serif;
         font-size: 0.8em;
+        line-height: 1.5;
         color: #8a8a8a;
       }
 
@@ -43,6 +44,102 @@
 
   .offer-of-the-month {
     display: flex;
+
+    .offer {
+      width: 50%;
+      padding: 100px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        background-color: #f2f0f0;
+
+      .offer-name {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+      }
+
+      .offer-title {
+        margin-top: 35px;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.5em;
+        text-transform: uppercase;
+      }
+
+      .offer-text {
+        margin-top: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8em;
+        line-height: 1.5;
+        color: #8a8a8a;
+        text-align: center;
+      }
+
+      .price {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        
+        .new {
+          margin-right: 25px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 3em;
+          font-weight: bold;
+          color: #3954d9;
+        }
+
+        .old {
+          margin-left: 25px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 2em;
+          text-decoration: line-through;
+        }
+
+      }
+
+      .time-left {
+        width: 420px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .time-left-item {
+          width: 90px;
+          height: 110px;
+          padding: 25px 5px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          background-color: #ffffff;
+          border-radius: 20px;
+
+          .value {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2em;
+          }
+
+          .value-name {
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+          }
+
+        }
+
+      }
+
+      .shop-now {
+        margin-top: 50px;
+      }
+
+    }
+
+    .image {
+      width: 50%;
+      background: url("../img/body/offer-of-the-month/image.jpg") center center / cover;
+    }
 
   }
 
