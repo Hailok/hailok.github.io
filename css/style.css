@@ -259,7 +259,13 @@ table {
   margin-left: 25px;
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
-  text-decoration: line-through;
+}
+#main .offer-of-the-month .offer .price .old .line-through {
+  width: 100%;
+  position: relative;
+  top: 0.5em;
+  transform: rotate(5deg);
+  border-bottom: 3px solid red;
 }
 #main .offer-of-the-month .offer .time-left {
   width: 420px;
@@ -293,6 +299,32 @@ table {
 #main .offer-of-the-month .image {
   width: 50%;
   background: url("../img/body/offer-of-the-month/image.jpg") center center/cover;
+}
+
+.regular-offers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.regular-offers .offer {
+  width: 25%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  color: #000000;
+}
+.regular-offers .offer .offer-image {
+  width: 100%;
+}
+.regular-offers .offer .offer-title {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.regular-offers .offer .offer-price {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
