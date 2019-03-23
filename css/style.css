@@ -77,13 +77,13 @@ table {
 #header {
   display: flex;
   flex-direction: column;
-  background: url(../img/header/bg.jpg) no-repeat center center/cover;
+  background: url(../img/header/bg.jpg) no-repeat center top/cover;
   height: 100vh;
 }
 #header .menu {
-  height: 75px;
+  height: 50px;
   display: flex;
-  background-color: rgba(33, 33, 33, 0.75);
+  background-color: rgba(33, 33, 33, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 #header .menu .logo {
@@ -121,7 +121,7 @@ table {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 300px;
+  width: 250px;
   padding: 10px;
   box-sizing: border-box;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
@@ -182,7 +182,6 @@ table {
 #main .about-us {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 #main .about-us .about-us-item {
   display: flex;
@@ -192,7 +191,7 @@ table {
   padding: 75px 70px;
   box-sizing: border-box;
   border-right: 1px solid rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 0 25px rgba(12, 12, 12, 0.13);
+  box-shadow: inset 0 -5px 10px rgba(12, 12, 12, 0.13);
 }
 #main .about-us .about-us-item .about-us-item-title {
   margin-top: 30px;
@@ -300,29 +299,81 @@ table {
   width: 50%;
   background: url("../img/body/offer-of-the-month/image.jpg") center center/cover;
 }
-
-.regular-offers {
+#main .regular-offers {
   display: flex;
   flex-wrap: wrap;
 }
-.regular-offers .offer {
+#main .regular-offers .offer {
   width: 25%;
   padding: 20px 10px;
   box-sizing: border-box;
   color: #000000;
 }
-.regular-offers .offer .offer-image {
+#main .regular-offers .offer .offer-image {
   width: 100%;
 }
-.regular-offers .offer .offer-title {
+#main .regular-offers .offer .offer-title {
   padding: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
-.regular-offers .offer .offer-price {
+#main .regular-offers .offer .offer-price {
   padding: 5px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+#main .categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .categories .category {
+  width: 375px;
+  height: 375px;
+  position: relative;
+}
+#main .categories .category .category-img {
+  width: 100%;
+}
+#main .categories .category .category-highlight {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+}
+#main .categories .category .category-highlight .category-title {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+#main .categories .category .category-highlight:hover {
+  opacity: 0.75;
+}
+#main .brands {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .brands .brand {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  padding: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+#footer .footer-copy {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }

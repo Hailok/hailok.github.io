@@ -5,7 +5,7 @@
   .about-us {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.25);
+    //border-bottom: 1px solid rgba($color: #000000, $alpha: 0.25);
 
     .about-us-item {
       display: flex;
@@ -15,7 +15,7 @@
       padding: 75px 70px;
       box-sizing: border-box;
       border-right: 1px solid rgba($color: #000000, $alpha: 0.25);
-      box-shadow: inset 0 0 25px rgba(12, 12, 12, 0.13);
+      box-shadow: inset 0 -5px 10px rgba(12, 12, 12, 0.13);
 
       .about-us-item-title {
         margin-top: 30px;
@@ -147,6 +147,95 @@
     .image {
       width: 50%;
       background: url("../img/body/offer-of-the-month/image.jpg") center center / cover;
+    }
+
+  }
+
+  .regular-offers {
+    display: flex;
+    flex-wrap: wrap;
+  
+    .offer {
+      width: 25%;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      color: #000000;
+  
+      .offer-image {
+        width: 100%;
+      }
+  
+      .offer-title {
+        padding: 5px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.25);
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+      }
+  
+      .offer-price {
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+      }
+  
+    }
+
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+
+    .category {
+      width: 375px;
+      height: 375px;
+      position: relative;
+
+      .category-img {
+        width: 100%;
+        
+      }
+
+      .category-highlight {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0;
+        transition: opacity 0.5s;
+        display: flex;
+
+        .category-title {
+          font-family: "Roboto", sans-serif;
+          color: #ffffff;
+          font-size: 1em;
+          text-transform: uppercase;
+          text-align: center;
+          margin: auto;
+        }
+
+        &:hover {
+          opacity: 0.75;
+        }
+
+      }
+
+    }
+
+  }
+
+  .brands {
+    display: flex;
+    flex-wrap: wrap;
+
+    .brand {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
   }
